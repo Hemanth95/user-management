@@ -64,8 +64,3 @@ This is a Fast API codebase that provides user management functionality.
 - `POST /auth/login`: Login.
 - `POST /roles`: Create new Roles.
 - `POST /roles/{role_id}/permissions`: Create or Add permission to roles.
-
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
