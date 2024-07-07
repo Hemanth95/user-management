@@ -34,10 +34,10 @@ This is a Fast API codebase that provides user management functionality.
     pip install -r requirements.txt
     ```
 6. Install Docker and Docker compose by following these instruction: 
-    ```
-    https://docs.docker.com/compose/install/
-    https://docs.docker.com/engine/install/ubuntu/
-    ```
+    
+    - https://docs.docker.com/compose/install/
+    - https://docs.docker.com/engine/install/ubuntu/
+    
 ## Usage
 
 1. Running docker compose file
