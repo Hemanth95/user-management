@@ -48,9 +48,13 @@ This is a Fast API codebase that provides user management functionality.
 2. Access the API endpoints using the following base URL:
 
     ```
-    http://localhost:8000
+    http://localhost:8000/docs
     ```
-
+3. For Autherization while accessing endpoints, do pass the token in the header
+    ```
+    Authorization : Bearer <token>
+    ```
+    
 ## API Endpoints
 
 - `GET /users`: Get a list of all users(only for admins).
