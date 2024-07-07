@@ -1,3 +1,6 @@
+"""
+This script is used to prepopulate the database with an admin user.
+"""
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy import create_engine
 from src.models import User, Role, Permission, UserRole, role_permission_table
