@@ -1,6 +1,6 @@
-# Flask API
+# Fast API
 
-This is a Flask API codebase that provides user management functionality.
+This is a Fast API codebase that provides user management functionality.
 
 ## Installation
 
