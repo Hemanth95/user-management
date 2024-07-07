@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: apphk
+      POSTGRES_PASSWORD: testuser
+      POSTGRES_DB: app
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    
+    networks:
+      - app-network
+    
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    
+    depends_on:
+      - db
+      - redis
+
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://apphk:testuser@db/app
+      - REDIS_URL=redis://redis/0=value
+    command: ["/bin/bash", "-c", "./start_app.sh"]
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
