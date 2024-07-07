@@ -7,7 +7,7 @@ This is a Fast API codebase that provides user management functionality.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/Hemanth95/user-management.git
     ```
 
 2. Navigate to the project directory:
